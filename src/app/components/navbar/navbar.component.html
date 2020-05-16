@@ -1,0 +1,15 @@
+<ul class="nav mx-3">
+  <li class="nav-item mx-2">
+    <button mat-icon-button routerLink='dashboard'>
+      <mat-icon color="primary">home</mat-icon>
+    </button>
+  </li>
+  <li class="nav-item mx-2">
+    <button mat-icon-button routerLink='favoris'>
+      <mat-icon color="primary"
+                matBadge="{{totalFavoris}}"
+                matBadgeColor="warn"
+                matBadgeSize="small">favorite</mat-icon>
+    </button>
+  </li>
+</ul>

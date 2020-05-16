@@ -1,0 +1,42 @@
+<div class="sidenav-container" [class.example-is-mobile]="mobileQuery.matches">
+  <mat-toolbar class="mat-elevation-z5">
+    <mat-toolbar-row>
+      <button mat-icon-button (click)="snav.toggle()">
+        <mat-icon color="primary">menu</mat-icon>
+      </button>
+    <span class="sidenav-spacer"></span>
+      <app-navbar></app-navbar>
+    </mat-toolbar-row>
+  </mat-toolbar>
+<mat-sidenav-container class="sidenav-sidenav-container"
+                       [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
+    <mat-sidenav #snav
+                 [mode]="mobileQuery.matches ? 'over' : 'side'"
+                 [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
+      <mat-nav-list>
+        <a mat-list-item routerLink="dashboard">
+          <button mat-icon-button>
+            <mat-icon color="accent">home</mat-icon>
+          </button>
+        </a>
+        <a mat-list-item routerLink="favoris">
+          <button mat-icon-button>
+            <mat-icon color="accent"
+                      matBadge="{{totalFavoris}}"
+                      matBadgeColor="primary"
+                      matBadgeSize="small">favorite</mat-icon>
+          </button>
+        </a>
+      </mat-nav-list>
+    </mat-sidenav>
+
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <mat-toolbar-row>
+        <h1>Exemple - Liste de favoris en utilisant local storage </h1>
+      </mat-toolbar-row>
+    </mat-toolbar>
+      <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+</div>
