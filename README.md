@@ -5,7 +5,7 @@ Crée par Akdag Orhan
 - git clone https://github.com/OrhanAkdag/Angular-liste-favori
 - cd Angular-liste-favori
 - npm install
-- ng buid
+- ng build
 - json-server --watch annonce.json
 - ng serve
 
