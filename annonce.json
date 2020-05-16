@@ -2,71 +2,52 @@
   "annonce": [
     {
       "id": 1,
-      "title": "Annonce",
-      "fav": false
+      "title": "Annonce"
     },
     {
       "id": 2,
-      "title": "Annonce",
-      "fav": false
-
+      "title": "Annonce"
     },
     {
       "id": 3,
-      "title": "Annonce",
-      "fav": false
-
+      "title": "Annonce"
     },
     {
       "id": 4,
-      "title": "Annonce",
-      "fav": false
-
+      "title": "Annonce"
     },
     {
       "id": 5,
-      "title": "Annonce",
-      "fav": false
-
+      "title": "Annonce"
     },
     {
       "id": 6,
-      "title": "Annonce",
-      "fav": false
+      "title": "Annonce"
     },
     {
       "id": 7,
-      "title": "Annonce",
-      "fav": false
+      "title": "Annonce"
     },
     {
       "id": 8,
-      "title": "Annonce",
-      "fav": false
+      "title": "Annonce"
 
     },
     {
       "id": 9,
-      "title": "Annonce",
-      "fav": false
-
+      "title": "Annonce"
     },
     {
       "id": 10,
-      "title": "Annonce",
-      "fav": false
-
+      "title": "Annonce"
     },
     {
       "id": 11,
-      "title": "Annonce",
-      "fav": false
-
+      "title": "Annonce"
     },
     {
       "id": 12,
-      "title": "Annonce",
-      "fav": false
+      "title": "Annonce"
     }
   ]
 }

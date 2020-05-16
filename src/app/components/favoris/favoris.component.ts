@@ -27,6 +27,7 @@ export class FavorisComponent implements OnInit {
       }
       this.annonces = data;
       this.favorisList = data.filter(({id}) => this.annonceLocalStorage.includes(id));
+      this.totalFavoris = localStorage.length;
       //console.log(this.favorisList);
       //console.log(this.annonceLocalStorage);
     });

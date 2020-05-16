@@ -1,4 +1,7 @@
 <div class="container my-5">
+  <div *ngIf="totalFavoris == 0">
+    <h1 class="text-center">Vous n'avez pas encore selectionné de favoris</h1>
+  </div>
   <div class="row m-0">
     <div class="col-sm-12 col-md-4 col-lg-4" *ngFor="let annonce of favorisList">
       <ng-container *ngIf="annonceLocalStorage.includes(annonce.id)">
