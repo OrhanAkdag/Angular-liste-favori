@@ -52,6 +52,9 @@ export class FavorisComponent implements OnInit {
     this.totalFavoris = localStorage.length;
     this.favoriService.updateTotalFavori(this.totalFavoris);
     this.openSnackBar(annonce.title + ' ' + annonce.id + ' a été retiré des favoris', '' +this.totalFavoris);
+    this.annonceService.getAnnonces().subscribe((data: Annonce[]) =>{
+      this.favorisList = data.filter(({id}) => this.annonceLocalStorage.includes(id));
+    });
   }
 
 }
